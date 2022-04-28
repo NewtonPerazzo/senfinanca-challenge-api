@@ -1,1 +1,1 @@
-web gunicorn senfinanca-challenge-api.wsgi:application --log-file -
+web gunicorn senfinanca.wsgi:application --log-file -
