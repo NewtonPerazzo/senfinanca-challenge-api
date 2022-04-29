@@ -10,6 +10,7 @@ class Transaction(models.Model):
     name = models.CharField(max_length=300, verbose_name="Transação")
     type = models.CharField(max_length=300, verbose_name="Tipo")
     value = models.FloatField(verbose_name="Valor")
+    created_at = models.DateTimeField(auto_now=True)
 
     class Meta():
         verbose_name = "Transação"
